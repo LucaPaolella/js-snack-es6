@@ -53,3 +53,8 @@ const ospiti = [
     }
 ]
 
+ospiti.forEach(element => {
+    console.log(`Il nome dell'ospite è: ${element.nome}.`,
+    `Siederà nel posto numero: ${element.numPosto}.`,
+    `Il tavolo a lui assegnato è: ${element.Tavolo}.`)
+});
