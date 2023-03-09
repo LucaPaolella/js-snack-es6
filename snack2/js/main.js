@@ -39,14 +39,26 @@ const students = [
     }
 ]
 //Lista Caps Lock
-for (let i = 0; i < students.length; i++) {
+
+//Strada 1
+/*for (let i = 0; i < students.length; i++) {
     const targa = students[i];
     /*console.log(targa);*/
 
-    const targaNome = targa.name.toUpperCase();
+    /*const targaNome = targa.name.toUpperCase();
     console.log(targaNome);
-};
+};*/
 
+//Strada 2
+
+const targheStudenti = [];
+
+students.forEach((studente) => {
+    /*console.log(studente.name.toUpperCase())*/
+    targheStudenti.push(studente.name.toUpperCase())
+
+});
+console.log(targheStudenti)
 //Secondo passo: Lista voti 70+
 
 
