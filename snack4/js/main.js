@@ -57,7 +57,7 @@ const randomPunti = team.map((element) => {
 console.log(randomPunti);
 
 const randomFalli = team.map((element) => {
-    //console.log(element.punti);
+
     const zeroFalli =element.falli;
     let unPoDiFalli = "";
 
@@ -71,5 +71,23 @@ const randomFalli = team.map((element) => {
 });
 console.log(randomFalli);
 
+//step4. Nuovo Array 
 
+//Prima estrapolo i nomi dei team 
+const nomiTeam = team.map((element) => {
+    const tuttiNomi =element.nome;
+    console.log(tuttiNomi)
+
+    return tuttiNomi
+});
+console.log(nomiTeam)
+
+/*nomiTeam.push(randomFalli[0],randomFalli[1],randomFalli[2],randomFalli[3] )
+console.log(nomiTeam)*/
+
+//Poi randomizzo nomi e falli
+console.log("Nome squadra:", nomiTeam[0], "Falli subiti:", randomFalli[0] );
+console.log("Nome squadra:", nomiTeam[1], "Falli subiti:", randomFalli[1] );
+console.log("Nome squadra:", nomiTeam[2], "Falli subiti:", randomFalli[2] );
+console.log("Nome squadra:", nomiTeam[3], "Falli subiti:", randomFalli[3] );
 
