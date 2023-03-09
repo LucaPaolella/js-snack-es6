@@ -59,29 +59,46 @@ students.forEach((studente) => {
 
 });
 console.log(targheStudenti)
+
 //Secondo passo: Lista voti 70+
 
+//Strada 1
 
-for (let i = 0; i < students.length; i++) {
+/*for (let i = 0; i < students.length; i++) {
     const gradesValue = students[i];
     /*console.log(targa);*/
 
-    const goodStudents = gradesValue.grades >= 70
+    /*const goodStudents = gradesValue.grades >= 70
     /*console.log(goodStudents);*/
 
-    if (goodStudents == true ){
+    /*if (goodStudents == true ){
         console.log(gradesValue.name)
-    }
+    }*/
 
     //Terzo passo
 
-    const selectedStudents = gradesValue.id > 120;
+    /*const selectedStudents = gradesValue.id > 120;
     if (goodStudents == true && selectedStudents == true){
         console.log(gradesValue.name)
     }
-};
+};*/
 
 /*const goodStudents = students[i].map(() => {
     return valori.id >= 70;
 })
 console.log(goodStudents)*/
+
+//Strada 2
+
+const studentiTop= [];
+
+students.forEach (function(studente){
+   /*console.log(studente.grades);
+    console.log(studente.name);*/
+    
+    if (studente.grades > 70){
+        studentiTop.push(studente.name)
+    }
+});
+
+console.log(studentiTop);
