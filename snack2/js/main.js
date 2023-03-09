@@ -88,7 +88,7 @@ console.log(targheStudenti)
 })
 console.log(goodStudents)*/
 
-//Strada 2
+//Strada 2 per il punto 2
 
 const studentiTop= [];
 
@@ -102,3 +102,18 @@ students.forEach (function(studente){
 });
 
 console.log(studentiTop);
+
+//Strada 2 per il punto 3
+
+const studentiSelezionati= [];
+
+students.forEach (function(studente){
+   /*console.log(studente.grades);
+    console.log(studente.name);*/
+    
+    if (studente.grades > 70 && studente.id > 120){
+        studentiSelezionati.push(studente.name)
+    }
+});
+
+console.log(studentiSelezionati);
